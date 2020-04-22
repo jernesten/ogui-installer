@@ -8,11 +8,13 @@ sudo apt-get install google-drive-ocamlfuse
 
 cd ~/
 git clone https://github.com/jernesten/ogui
+rm -R -f ~/ogui/.git
 
-source $HOME/.config/user-dirs.dirs
-touch  $HOME/ogui/ogui.desktop
-echo -e "[Desktop Entry]\nType=Application\nIcon="$HOME"/.local/share/ogui/images/ogui.png\nName=ogui\nGenericName=ogui\nComment=GUI for gdrive ocamlfuse\nCategories=Internet;\nExec="$HOME"/.local/share/ogui/py/ogui\nTerminal=false" >> $HOME/ogui/ogui.desktop
-chmod +x $HOME/ogui/ogui.desktop
+touch  ~/ogui/ogui.desktop
+echo "[Desktop Entry]\nType=Application\nIcon="$HOME"/.local/share/ogui/images/ogui.png\nName=ogui\nGenericName=ogui\nComment=GUI for gdrive ocamlfuse\nCategories=Network;\nExec="$HOME"/.local/share/ogui/py/ogui\nPath="$HOME"/.local/share/ogui\nTerminal=false" >> $HOME/ogui/ogui.desktop
+chmod +x ~/ogui/ogui.desktop
+
+chmod +x ~/ogui/py/ogui
 
 cp -R ~/ogui ~/.local/share
 cp ~/ogui/ogui.desktop ~/.local/share/applications/ogui.desktop
