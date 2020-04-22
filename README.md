@@ -3,7 +3,7 @@
 ogui installer for ubuntu systems
 
 ----
-Still in development
+State: in development
 ----
 
 ## What should the Installer do?
