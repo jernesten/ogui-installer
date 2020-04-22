@@ -12,7 +12,7 @@ git clone https://github.com/jernesten/ogui
 source $HOME/.config/user-dirs.dirs
 touch  $HOME/ogui/ogui.desktop
 echo -e "[Desktop Entry]\nType=Application\nIcon="$HOME"/.local/share/ogui/images/ogui.png\nName=ogui\nGenericName=ogui\nComment=GUI for gdrive ocamlfuse\nCategories=Internet;\nExec="$HOME"/.local/share/ogui/py/ogui\nTerminal=false" >> $HOME/ogui/ogui.desktop
-$HOME/ogui/ogui.desktop
+chmod +x $HOME/ogui/ogui.desktop
 
 cp -R ~/ogui ~/.local/share
 cp ~/ogui/ogui.desktop ~/.local/share/applications/ogui.desktop
