@@ -17,13 +17,10 @@ State: in development
 | Lubuntu            | soon    |
 | Kubuntu            | soon    |
 
-----
-- ***1:** Working but the menu don't read ~/.local/share/applications/ogui.desktop and cant'be manually added
------> **Solution:** Copy ~/.local/share/applications/ogui.desktop into an other directory and launch it from there.
-----
-- **Other:** In an ubuntu + xfce custom distro the launcher (~/.local/share/applications/ogui.desktop) has being build with errors (unknowed causes)
------> **Solution:** Use Installation guide in https://github.com/jernesten/ogui to build it correctly.
-----
+|ID|Problem|Solution|
+|--|:-----:|-------:|
+|***1:**| Working but the menu don't read ~/.local/share/applications/ogui.desktop and cant'be manually added | Copy ~/.local/share/applications/ogui.desktop into an other directory and launch it from there.|
+|**Other:**| In an ubuntu + xfce custom distro the launcher (~/.local/share/applications/ogui.desktop) has being build with errors (unknowed causes) | Use Installation guide in https://github.com/jernesten/ogui to build it correctly.|
 
 ## What should the Installer be able to do?
 
