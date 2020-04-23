@@ -35,6 +35,8 @@ two(){
  sudo add-apt-repository ppa:alessandro-strada/ppa
  sudo apt-get update
  sudo apt-get install google-drive-ocamlfuse
+ one
+ pause
 }
 
 three(){
@@ -76,7 +78,7 @@ read_options(){
  read -p "Enter choice [1 - 5]" choice
  case $choice in
   1) one && pause ;;
-  2) two && one && pause ;;
+  2) two ;;
   3) three && pause ;;
   4) four && three && pause ;;
   5) exit ;;
