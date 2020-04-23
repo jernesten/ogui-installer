@@ -17,6 +17,10 @@ chmod +x ~/ogui/ogui.desktop
 chmod +x ~/ogui/py/ogui
 
 cp -R ~/ogui ~/.local/share
+if [ -d ~/.local/share/applications/ ];
+then
 cp ~/ogui/ogui.desktop ~/.local/share/applications/ogui.desktop
-
+else
+mkdir .local/share/applications/ && cp ~/ogui/ogui.desktop ~/.local/share/applications/ogui.desktop
+fi
 exit
