@@ -14,7 +14,7 @@ State: in development
 | Ubuntu + Openbox   | see *1  |
 | Linuxmint Cinnamon | Working |
 | Xubuntu            | Working |
-| Lubuntu            | soon    |
+| Lubuntu            | Working |
 | Kubuntu            | soon    |
 
 |ID|Problem|Solution|
