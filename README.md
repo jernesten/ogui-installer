@@ -29,4 +29,24 @@ State: in development
 - uninstall gdrive ocamlfuse and delete the PPA
 - uninstall OGUI
 
+## How to use
+
+- Clone or download the repo
+```
+git clone https://github.com/jernesten/ogui-installer
+```
+- extract if needed (if you've download a zip)
+- go to the directory
+- execute script ('chmod +x ogui-installer' may be needed)
+```
+sh ogui-installer
+```
+-choose your option in the menu
+```
+1. Only install OGUI, GDrive Ocamlfuse is already installed
+2. Install both OGUI and GDrive Ocamlfuse
+3. Uninstall OGUI
+4. Uninstall both OGUI and GDrive Ocamlfuse (It will also remove PPA)
+5. Exit            
+```
 
