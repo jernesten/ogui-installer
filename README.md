@@ -23,6 +23,8 @@ State: in development
 
 - **Other:** In an ubuntu + xfce custom distro the launcher (~/.local/share/applications/ogui.desktop) has being build with errors (unknowed causes)
 
+**Solution:** Use Installation guide in https://github.com/jernesten/ogui to build it correctly.
+
 ## What should the Installer be able to do?
 
 - install gdrive ocamlfuse from PPA in the system
