@@ -1,23 +1,99 @@
 #!/bin/bash
 
-sudo apt-get install git software-properties-common python3 python3-tk python3-software-properties
+# Define variables
 
-sudo add-apt-repository ppa:alessandro-strada/ppa
-sudo apt-get update
-sudo apt-get install google-drive-ocamlfuse
+EDITOR=nano
+PASSWD=/etc/passwd
+RED='\033[0;41;30m'
+STD='\033[0;0;39m'
+ 
+# User defined function
 
-cd ~/
-git clone https://github.com/jernesten/ogui
-rm -R -f ~/ogui/.git
+pause(){
+  read -p "Press [Enter] key to continue..." fackEnterKey
+}
 
-touch  ~/ogui/ogui.desktop
-echo "[Desktop Entry]\nType=Application\nIcon="$HOME"/.local/share/ogui/images/ogui.png\nName=ogui\nGenericName=ogui\nComment=GUI for gdrive ocamlfuse\nCategories=Network;\nExec="$HOME"/.local/share/ogui/py/ogui\nPath="$HOME"/.local/share/ogui\nTerminal=false" >> $HOME/ogui/ogui.desktop
-chmod +x ~/ogui/ogui.desktop
+one(){
+ sudo apt-get install git python3 python3-tk
+ cd ~/
+ git clone https://github.com/jernesten/ogui
+ rm -R -f ~/ogui/.git
 
-chmod +x ~/ogui/py/ogui
+ touch  ~/ogui/ogui.desktop
+ echo "[Desktop Entry]\nType=Application\nIcon="$HOME"/.local/share/ogui/images/ogui.png\nName=ogui\nGenericName=ogui\nComment=GUI for gdrive ocamlfuse\nCategories=Network;\nExec="$HOME"/.local/share/ogui/py/ogui\nPath="$HOME"/.local/share/ogui\nTerminal=false" >> $HOME/ogui/ogui.desktop
+ chmod +x ~/ogui/ogui.desktop
 
-cp -R ~/ogui ~/.local/share
-mkdir .local/share/applications/ 
-cp ~/ogui/ogui.desktop ~/.local/share/applications/ogui.desktop
+ chmod +x ~/ogui/py/ogui
 
-exit
+ cp -R ~/ogui ~/.local/share
+ mkdir .local/share/applications/ 
+ cp ~/ogui/ogui.desktop ~/.local/share/applications/ogui.desktop
+ }
+ 
+two(){
+ sudo apt-get install software-properties-common python3-software-properties
+ sudo add-apt-repository ppa:alessandro-strada/ppa
+ sudo apt-get update
+ sudo apt-get install google-drive-ocamlfuse
+}
+
+three(){
+ rm -R ~/.local/share/ogui
+ rm ~/.local/share/applications/ogui.desktop
+}
+ 
+four(){
+ sudo apt-get remove google-drive-ocamlfuse
+ sudo add-apt-repository --remove ppa:alessandro-strada/ppa
+ sudo apt-get auto-remove
+}
+ 
+# function to display menus
+show_menus() {
+ clear
+ echo "||========================================================================||" 
+ echo "||                         OGUI INSTALLATION MENU                         ||"
+ echo "||========================================================================||"
+ echo "||                                                                        ||"
+ echo "|| 1. Only install OGUI, GDrive Ocamlfuse is already installed            ||"
+ echo "|| 2. Install both OGUI and GDrive Ocamlfuse                              ||"
+ echo "|| 3. Uninstall OGUI                                                      ||"
+ echo "|| 4. Uninstall both OGUI and GDrive Ocamlfuse (It will also remove PPA)  ||"
+ echo "|| 5. Exit                                                                ||"
+ echo "||                                                                        ||"
+ echo "||========================================================================||"
+ echo "||            Keep this Script to easily uninstall if needed              ||"
+ echo "||========================================================================||"
+}
+# Lee la accion sobre el teclado y la ejecuta.
+# Invoca el () cuando el usuario selecciona 1 en el menú.
+# Invoca a los dos () cuando el usuario selecciona 2 en el menú.
+# Salir del menu cuando el usuario selecciona 3 en el menú.
+read_options(){
+ local choice
+ read -p "Enter choice [1 - 5]" choice
+ case $choice in
+  1) one && pause ;;
+  2) two && one && pause ;;
+  3) three && pause ;;
+  4) four && three && pause ;;
+  5) exit ;;
+  *) echo -e "${RED}Please enter choice [1 - 5]${STD}" && sleep 2
+ esac
+}
+ 
+# ----------------------------------------------
+# Trap CTRL+C, CTRL+Z and quit singles
+# ----------------------------------------------
+trap '' SIGINT SIGQUIT SIGTSTP
+ 
+# -----------------------------------
+# Main logic - infinite loop
+# ------------------------------------
+while true
+do
+ 
+ show_menus
+ read_options
+
+done
