@@ -40,12 +40,14 @@ two(){
 three(){
  rm -R ~/.local/share/ogui
  rm ~/.local/share/applications/ogui.desktop
+ echo "OGUI has being uninstalled"
 }
  
 four(){
  sudo apt-get remove google-drive-ocamlfuse
  sudo add-apt-repository --remove ppa:alessandro-strada/ppa
  sudo apt-get auto-remove
+ echo "google-drive-ocamlfuse has being uninstalled"
 }
  
 # function to display menus
