@@ -11,6 +11,7 @@ State: in development
 | Distro             | Result  |
 | ------------------ |--------:|
 | Bunsenlabs Debian  | see *1  |
+| Ubuntu + Openbox   | see *1  |
 | Linuxmint Cinnamon | Working |
 | Xubuntu            | Working |
 | Lubuntu            | soon    |
