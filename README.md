@@ -17,7 +17,7 @@ State: in development
 | Lubuntu            | soon    |
 | Kubuntu            | soon    |
 
-*1: Working but the menu don't read ~/.local/share/applications/ogui.desktop & cant'be manually added
+***1:** Working but the menu don't read ~/.local/share/applications/ogui.desktop & cant'be manually added
 Solution: Copy ~/.local/share/applications/ogui.desktop in othe directory and launch it from there.
 
 ## What should the Installer be able to do?
