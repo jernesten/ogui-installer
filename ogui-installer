@@ -28,6 +28,7 @@ one(){
   cp -R ~/ogui ~/.local/share
   mkdir .local/share/applications/ 
   cp ~/ogui/ogui.desktop ~/.local/share/applications/ogui.desktop
+  echo "ogui has being installed"
 }
  
 two(){
@@ -36,6 +37,8 @@ two(){
  sudo apt-get update
  sudo apt-get install google-drive-ocamlfuse
  one
+ echo "gdrive-ocamlfuse has being installed"
+ echo "ogui has being installed"
  pause
 }
 
@@ -49,7 +52,10 @@ four(){
  sudo apt-get remove google-drive-ocamlfuse
  sudo add-apt-repository --remove ppa:alessandro-strada/ppa
  sudo apt-get auto-remove
+ three
  echo "google-drive-ocamlfuse has being uninstalled"
+ echo "OGUI has being uninstalled"
+ pause
 }
  
 # function to display menus
@@ -80,7 +86,7 @@ read_options(){
   1) one && pause ;;
   2) two ;;
   3) three && pause ;;
-  4) four && three && pause ;;
+  4) four ;;
   5) exit ;;
   *) echo -e "${RED}Please enter choice [1 - 5]${STD}" && sleep 2
  esac
