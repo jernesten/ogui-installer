@@ -1,14 +1,29 @@
 # ogui-installer
 
-ogui installer for ubuntu systems
+ogui installer for debian & ubuntu systems
 
 ----
 State: in development
 ----
 
-## What should the Installer do?
+## Tests results
+
+| Distro             | Result  |
+| ------------------ |--------:|
+| Bunsenlabs Debian  | see *1  |
+| Linuxmint Cinnamon | Working |
+| Xubuntu            | Working |
+| Lubuntu            | soon    |
+| Kubuntu            | soon    |
+
+*1: Working but the menu don't read ~/.local/share/applications/ogui.desktop & cant'be manually added
+Solution: Copy ~/.local/share/applications/ogui.desktop in othe directory and launch it from there.
+
+## What should the Installer be able to do?
 
 - install gdrive ocamlfuse from PPA in the system
-- make a copy of ogui in ~/.local/share
-- generate ogui.desktop
-- make a copy of ogui.desktop in ~/.local/share/applications 
+- install OGUI
+- uninstall gdrive ocamlfuse and delete the PPA
+- uninstall OGUI
+
+
