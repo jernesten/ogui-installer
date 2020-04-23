@@ -3,7 +3,7 @@
 ogui installer for debian & ubuntu systems
 
 ----
-State: in development
+State: Testing some Dristos with different Desktop systems
 ----
 
 ## Tests results
