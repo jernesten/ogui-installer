@@ -15,7 +15,7 @@ State: Testing some Dristos with different Desktop systems
 | Linuxmint Cinnamon | Working |
 | Xubuntu            | Working |
 | Lubuntu            | Working |
-| Kubuntu            | soon    |
+| Kubuntu            | Working |
 
 |ID|Problem|Solution|
 |--|:-----:|:------:|
