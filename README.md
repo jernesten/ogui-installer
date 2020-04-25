@@ -6,11 +6,12 @@ ogui installer for debian & ubuntu systems
 State: Testing some Dristos with different Desktop systems
 ----
 
-## Tests results
+## Tests results for installer and GUI Application
 
 | Distro             | Result  |
 | ------------------ |--------:|
 | Bunsenlabs Debian  | see *1  |
+| Debian + Mate      | Working |
 | Ubuntu + Openbox   | see *1  |
 | Linuxmint Cinnamon | Working |
 | Xubuntu            | Working |
