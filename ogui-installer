@@ -39,6 +39,7 @@ two(){
  one
  echo "gdrive-ocamlfuse has being installed"
  echo "ogui has being installed"
+ rm -R -f ~/ogui
  pause
 }
 
