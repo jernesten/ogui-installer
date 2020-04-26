@@ -41,10 +41,11 @@ Only 2 small errors found:
 ```
 git clone https://github.com/jernesten/ogui-installer
 ```
-- extract if needed (if you've download a zip)
-- go to the directory
-- execute script ('chmod +x ogui-installer' may be needed)
+- extract if needed (if you downloaded a .zip)
+- go to the extracted folder
+- execute the script
 ```
+chmod +x ogui-installer
 sh ogui-installer
 ```
 -choose your option in the menu
