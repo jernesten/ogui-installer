@@ -8,20 +8,12 @@ State: Testing some Dristos with different Desktop systems
 
 ## Tests results for installer and GUI Application
 
-| Distro             | Result  |
-| ------------------ |--------:|
-| Bunsenlabs Debian  | see *1  |
-| Debian + Mate      | Working |
-| Ubuntu + Openbox   | see *1  |
-| Linuxmint Cinnamon | Working |
-| Xubuntu            | Working |
-| Lubuntu            | Working |
-| Kubuntu            | Working |
+Only 2 small errors found:
 
 |ID|Problem|Solution|
 |--|:-----:|:------:|
-|***1:**| Working but the menu don't read ~/.local/share/applications/ogui.desktop and cant'be manually added because app needs 'path' | Copy ~/.local/share/applications/ogui.desktop into an other directory and launch it from there.|
-|**Other:**| In an ubuntu + xfce custom distro the launcher (~/.local/share/applications/ogui.desktop) has being build with errors (unknowed causes) | Use Installation guide in https://github.com/jernesten/ogui to build it correctly.|
+|**1: Openbox menu**| Working but the menu can't launch ~/.local/share/applications/ogui.desktop and I couldn't find how work around it. | Copy ~/.local/share/applications/ogui.desktop into an other directory and launch it from there.|
+|**2: Custom Ubuntu XFCE**| In an ubuntu + xfce custom distro the launcher (~/.local/share/applications/ogui.desktop) has being build with errors (unknowed causes) | Use Installation guide in https://github.com/jernesten/ogui to build it correctly.|
 
 ## What should the Installer be able to do?
 
