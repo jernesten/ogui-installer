@@ -1,7 +1,7 @@
 # ogui-installer
 
 OGUI installer for debian & ubuntu systems
-OGUI is a GUI App for google-drive-ocamlfuse writen in python. More information in [OGUI's Readme](https://github.com/jernesten/ogui)
+OGUI is a GUI App for google-drive-ocamlfuse writen in python. [More information](https://github.com/jernesten/ogui)
 
 ---
 
