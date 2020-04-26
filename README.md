@@ -18,6 +18,14 @@ ogui installer for debian & ubuntu systems
                       ||            Keep this Script to easily uninstall if needed              ||
                       ||========================================================================||
   
+
+## What should the Installer be able to do?
+
+- install gdrive ocamlfuse from PPA in the system
+- install OGUI
+- uninstall gdrive ocamlfuse and delete the PPA
+- uninstall OGUI
+
 ---
 Only 2 small errors found:
 
@@ -27,13 +35,6 @@ Only 2 small errors found:
 |**2: Custom Ubuntu XFCE**| In an ubuntu + xfce custom distro the launcher (~/.local/share/applications/ogui.desktop) has being build with errors (unknowed causes) | Use Installation guide in https://github.com/jernesten/ogui to build it correctly.|
 
 ---
-
-## What should the Installer be able to do?
-
-- install gdrive ocamlfuse from PPA in the system
-- install OGUI
-- uninstall gdrive ocamlfuse and delete the PPA
-- uninstall OGUI
 
 ## How to use
 
