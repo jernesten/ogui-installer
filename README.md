@@ -26,16 +26,12 @@ ogui installer for debian & ubuntu systems
 - uninstall gdrive ocamlfuse and delete the PPA
 - uninstall OGUI
 
---
-
 Only 2 small errors found:
 
 ||Problem|Solution|
 |--|:-----:|:------:|
 |**1: Openbox menu**| Working but the menu can't launch ~/.local/share/applications/ogui.desktop and I couldn't find how work around it. | Copy ~/.local/share/applications/ogui.desktop into an other directory and launch it from there.|
 |**2: Custom Ubuntu XFCE**| In an ubuntu + xfce custom distro the launcher (~/.local/share/applications/ogui.desktop) has being build with errors (unknowed causes) | Use Installation guide in https://github.com/jernesten/ogui to build it correctly.|
-
---
 
 ## How to use
 
