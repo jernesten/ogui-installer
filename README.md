@@ -4,19 +4,19 @@ ogui installer for debian & ubuntu systems
 
 ---
 
-                ||========================================================================||
-                ||                         OGUI INSTALLATION MENU                         ||
-                ||========================================================================||
-                ||                                                                        ||
-                || 1. Only install OGUI, GDrive Ocamlfuse is already installed            ||
-                || 2. Install both OGUI and GDrive Ocamlfuse                              ||
-                || 3. Uninstall OGUI                                                      ||
-                || 4. Uninstall both OGUI and GDrive Ocamlfuse (It will also remove PPA)  ||
-                || 5. Exit                                                                ||
-                ||                                                                        ||
-                ||========================================================================||
-                ||            Keep this Script to easily uninstall if needed              ||
-                ||========================================================================||
+                      ||========================================================================||
+                      ||                         OGUI INSTALLATION MENU                         ||
+                      ||========================================================================||
+                      ||                                                                        ||
+                      || 1. Only install OGUI, GDrive Ocamlfuse is already installed            ||
+                      || 2. Install both OGUI and GDrive Ocamlfuse                              ||
+                      || 3. Uninstall OGUI                                                      ||
+                      || 4. Uninstall both OGUI and GDrive Ocamlfuse (It will also remove PPA)  ||
+                      || 5. Exit                                                                ||
+                      ||                                                                        ||
+                      ||========================================================================||
+                      ||            Keep this Script to easily uninstall if needed              ||
+                      ||========================================================================||
   
 ---
 Only 2 small errors found:
