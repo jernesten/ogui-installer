@@ -6,7 +6,7 @@ ogui installer for debian & ubuntu systems
 State: Testing some Dristos with different Desktop systems
 ----
 
-## Tests results for installer and GUI Application
+## Tests results for installer
 
 Only 2 small errors found:
 
