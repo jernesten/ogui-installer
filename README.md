@@ -21,7 +21,7 @@ ogui installer for debian & ubuntu systems
 
 ## What should the Installer be able to do?
 
-- install gdrive ocamlfuse from PPA in the system
+- install gdrive ocamlfuse from PPA
 - install OGUI
 - uninstall gdrive ocamlfuse and delete the PPA
 - uninstall OGUI
