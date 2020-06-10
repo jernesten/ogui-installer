@@ -20,7 +20,7 @@ one(){
   rm -R -f ~/ogui/.git
 
   touch  ~/ogui/ogui.desktop
-  echo "[Desktop Entry]\nType=Application\nIcon="$HOME"/.local/share/ogui/images/ogui.png\nName=ogui\nGenericName=ogui\nComment=GUI for gdrive ocamlfuse\nCategories=Network;\nExec="$HOME"/.local/share/ogui/py/ogui\nPath="$HOME"/.local/share/ogui\nTerminal=false" >> $HOME/ogui/ogui.desktop
+  echo "[Desktop Entry]\nType=Application\nIcon="$HOME"/.local/share/ogui/images/ogui.png\nName=ogui\nGenericName=ogui\nComment=GUI for gdrive ocamlfuse\nCategories=Network;\nExec="$HOME"/.local/share/ogui/py/ogui\nTerminal=false" >> $HOME/ogui/ogui.desktop
   chmod +x ~/ogui/ogui.desktop
 
   chmod +x ~/ogui/py/ogui
