@@ -31,7 +31,7 @@ Only 2 small errors found:
 
 ||Problem|Solution|
 |--|:-----:|:------:|
-|**1: Openbox menu**| ~~Working but the menu can't launch $HOME/.local/share/applications/ogui.desktop~~ The application launcher don't need path anymore, so now it should work. Tested in a custom ubuntu + openbox with python3.6 and working. | Copy ~/.local/share/applications/ogui.desktop into an other directory and launch it from there.|
+|~~**1: Openbox menu**~~| ~~Working but the menu can't launch $HOME/.local/share/applications/ogui.desktop~~ The application launcher don't need path anymore, so now it should work. Tested in a custom ubuntu + openbox with python3.6 and working. | ~~Copy ~/.local/share/applications/ogui.desktop into an other directory and launch it from there.~~|
 |**2: Custom Ubuntu XFCE**| In an ubuntu + xfce custom distro the launcher (~/.local/share/applications/ogui.desktop) has being build with errors (unknowed causes) | Use Installation guide in https://github.com/jernesten/ogui to build it correctly.|
 
 ## :wrench: How to use
