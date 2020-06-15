@@ -27,7 +27,7 @@ OGUI is a GUI App for google-drive-ocamlfuse writen in python. [More information
 - uninstall gdrive ocamlfuse and delete the PPA
 - uninstall OGUI
 
-Only 2 small errors found:
+Only 1 small error found:
 
 ||Problem|Solution|
 |--|:-----:|:------:|
